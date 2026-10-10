@@ -1,0 +1,367 @@
+# SWE573 Indigenous Crafts – Wireframes v0.1
+
+These wireframes represent the initial interface sketches for the main user stories and use cases.
+
+---
+
+## WF-01 – Register / Login
+
+Related User Stories:
+- US-01 – Register
+- US-02 – Login
+
+Related Use Case:
+- UC-01 – Register and Login
+
+```text
++------------------------------------------+
+|            INDIGENOUS CRAFTS             |
++------------------------------------------+
+|                                          |
+| Email                                    |
+| [____________________________________]   |
+|                                          |
+| Password                                 |
+| [____________________________________]   |
+|                                          |
+|              [ Login ]                   |
+|                                          |
+| Don't have an account?                   |
+|              [ Register ]                |
+|                                          |
++------------------------------------------+
+```
+
+---
+
+## WF-02 – Create Craft
+
+Related User Stories:
+- US-03 – Create Craft
+- US-04 – Add Craft Information
+- US-05 – Add Tags
+- US-06 – Add Measurements
+- US-07 – Add Location
+- US-08 – Upload Craft Images
+
+Related Use Case:
+- UC-02 – Create Craft
+
+```text
++------------------------------------------------+
+|                 CREATE CRAFT                   |
++------------------------------------------------+
+|                                                |
+| Craft Name *                                   |
+| [__________________________________________]   |
+|                                                |
+| Craft Type *                                   |
+| [__________________________________________]   |
+|                                                |
+| Location *                                     |
+| [__________________________________________]   |
+|                                                |
+| Description                                    |
+| [__________________________________________]   |
+| [__________________________________________]   |
+| [__________________________________________]   |
+|                                                |
+| Material                                       |
+| [__________________________________________]   |
+|                                                |
+| Production Method                              |
+| [__________________________________________]   |
+|                                                |
+| Story / Background                             |
+| [__________________________________________]   |
+| [__________________________________________]   |
+|                                                |
+| Tools / Cultural Information                   |
+| [__________________________________________]   |
+| [__________________________________________]   |
+|                                                |
+| Tags                                           |
+| [____________________] [ + Add Tag ]           |
+|                                                |
+| Colors                                         |
+| [____________________] [ + Add Color ]         |
+|                                                |
+| Pattern                                        |
+| [__________________________________________]   |
+|                                                |
+| Distinguished Features                         |
+| [__________________________________________]   |
+|                                                |
+| Measurements                                   |
+| [Name] [Value] [Unit] [ + Add Measurement ]    |
+|                                                |
+| Example:                                       |
+| [Width] [120] [cm]                             |
+|                                                |
+| Images                                         |
+| [ Upload Image ]                               |
+|                                                |
+|                 [ Create Craft ]               |
+|                                                |
++------------------------------------------------+
+
+* Required field
+```
+
+---
+
+## WF-03 – Browse and Search Crafts
+
+Related User Stories:
+- US-11 – Browse Crafts
+- US-12 – Search Crafts
+
+Related Use Cases:
+- UC-04 – Browse Crafts
+- UC-05 – Search Crafts
+
+```text
++------------------------------------------------+
+|              INDIGENOUS CRAFTS                 |
++------------------------------------------------+
+|                                                |
+| Search                                         |
+| [_______________________________] [ Search ]   |
+|                                                |
++------------------------------------------------+
+|                                                |
+| CRAFTS                                         |
+|                                                |
+| +--------------------+  +--------------------+ |
+| |      [Image]       |  |      [Image]       | |
+| |                    |  |                    | |
+| | Craft Name         |  | Craft Name         | |
+| | Craft Type         |  | Craft Type         | |
+| | Location           |  | Location           | |
+| |                    |  |                    | |
+| | [ View Details ]   |  | [ View Details ]   | |
+| +--------------------+  +--------------------+ |
+|                                                |
+| +--------------------+  +--------------------+ |
+| |      [Image]       |  |      [Image]       | |
+| | Craft Name         |  | Craft Name         | |
+| | Craft Type         |  | Craft Type         | |
+| | Location           |  | Location           | |
+| | [ View Details ]   |  | [ View Details ]   | |
+| +--------------------+  +--------------------+ |
+|                                                |
++------------------------------------------------+
+```
+
+---
+
+## WF-04 – Craft Detail
+
+Related User Stories:
+- US-13 – View Craft Details
+- US-14 – View Similar Crafts
+- US-15 – Follow Craft
+
+Related Use Case:
+- UC-06 – View Craft Details
+
+```text
++------------------------------------------------+
+|                  CRAFT DETAIL                  |
++------------------------------------------------+
+|                                                |
+| Craft Name                                     |
+|                                                |
+| [                Main Image                ]   |
+|                                                |
+| Craft Type:                                    |
+| Location:                                      |
+| Material:                                      |
+| Tags:                                          |
+| Colors:                                        |
+| Pattern:                                       |
+|                                                |
+| Description                                    |
+| [__________________________________________]   |
+|                                                |
+| Production Method                              |
+| [__________________________________________]   |
+|                                                |
+| Story / Background                             |
+| [__________________________________________]   |
+|                                                |
+| Tools / Cultural Information                   |
+| [__________________________________________]   |
+|                                                |
+| Distinguished Features                         |
+| [__________________________________________]   |
+|                                                |
+| Measurements                                   |
+| Width: 120 cm                                  |
+| Length: 200 cm                                 |
+|                                                |
+| Contributed by: User                           |
+|                                                |
+| [ Follow Craft ]                               |
+|                                                |
++------------------------------------------------+
+|                 SIMILAR CRAFTS                 |
+|                                                |
+| [Craft Card]  [Craft Card]  [Craft Card]       |
+|                                                |
++------------------------------------------------+
+```
+
+---
+
+## WF-05 – Edit Craft
+
+Related User Story:
+- US-09 – Edit Own Craft
+
+Related Use Case:
+- UC-03 – Edit or Delete Own Craft
+
+```text
++------------------------------------------------+
+|                   EDIT CRAFT                   |
++------------------------------------------------+
+|                                                |
+| Craft Name                                     |
+| [Existing value____________________________]   |
+|                                                |
+| Craft Type                                     |
+| [Existing value____________________________]   |
+|                                                |
+| Location                                       |
+| [Existing value____________________________]   |
+|                                                |
+| Description                                    |
+| [Existing value____________________________]   |
+| [__________________________________________]   |
+|                                                |
+| Tags                                           |
+| [Existing tags] [ + Add Tag ]                  |
+|                                                |
+| Measurements                                   |
+| [Existing measurements]                        |
+| [ + Add Measurement ]                          |
+|                                                |
+| Images                                         |
+| [Existing images] [ Upload Image ]             |
+|                                                |
+|                 [ Save Changes ]               |
+|                                                |
++------------------------------------------------+
+```
+
+---
+
+## WF-06 – User Profile
+
+Related User Stories:
+- US-16 – Follow User
+- US-15 – Follow Craft
+
+Related Use Case:
+- UC-07 – Follow Craft or User
+
+```text
++------------------------------------------------+
+|                  USER PROFILE                  |
++------------------------------------------------+
+|                                                |
+| User Name                                      |
+|                                                |
+| About                                          |
+| [__________________________________________]   |
+| [__________________________________________]   |
+|                                                |
+|              [ Follow User ]                   |
+|                                                |
++------------------------------------------------+
+|                USER'S CRAFTS                   |
+|                                                |
+| [Craft Card]   [Craft Card]   [Craft Card]     |
+|                                                |
++------------------------------------------------+
+|               FOLLOWED CRAFTS                  |
+|                                                |
+| [Craft Card]   [Craft Card]                    |
+|                                                |
++------------------------------------------------+
+```
+
+---
+
+## WF-07 – Report Craft
+
+Related User Stories:
+- US-17 – Report Craft
+- US-18 – Manage Reported Content
+
+Related Use Cases:
+- UC-08 – Report Craft
+- UC-09 – Review Reported Content
+
+Priority:
+- Should Have
+
+```text
++------------------------------------------+
+|              REPORT CRAFT                |
++------------------------------------------+
+|                                          |
+| Craft: Example Craft                     |
+|                                          |
+| Reason for Report                        |
+| [____________________________________]   |
+| [____________________________________]   |
+| [____________________________________]   |
+|                                          |
+|          [ Submit Report ]               |
+|                                          |
++------------------------------------------+
+```
+
+---
+
+## WF-08 – Admin Report Review
+
+Related User Story:
+- US-18 – Manage Reported Content
+
+Related Use Case:
+- UC-09 – Review Reported Content
+
+Priority:
+- Should Have
+
+```text
++------------------------------------------------+
+|               REPORTED CONTENT                 |
++------------------------------------------------+
+|                                                |
+| Reported Craft: Example Craft                  |
+| Reported By: User                              |
+|                                                |
+| Reason                                         |
+| [__________________________________________]   |
+|                                                |
+| [ View Craft ]                                 |
+|                                                |
+| [ Edit Content ]                               |
+| [ Remove Content ]                             |
+| [ Mark as Reviewed ]                           |
+|                                                |
++------------------------------------------------+
+```
+
+---
+
+# Notes
+
+- These wireframes are low-fidelity interface sketches.
+- Their purpose is to show the main user interactions and screen structure.
+- Visual styling, colors, fonts, and final layout will be decided during frontend implementation.
+- Report functionality is classified as **Should Have** and is not required for the initial prototype.
