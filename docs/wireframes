@@ -47,67 +47,126 @@ Related User Stories:
 Related Use Case:
 - UC-02 – Create Craft
 
-```text
-+------------------------------------------------+
-|                 CREATE CRAFT                   |
-+------------------------------------------------+
-|                                                |
-| Craft Name *                                   |
-| [__________________________________________]   |
-|                                                |
-| Craft Type *                                   |
-| [__________________________________________]   |
-|                                                |
-| Location *                                     |
-| [__________________________________________]   |
-|                                                |
-| Description                                    |
-| [__________________________________________]   |
-| [__________________________________________]   |
-| [__________________________________________]   |
-|                                                |
-| Material                                       |
-| [__________________________________________]   |
-|                                                |
-| Production Method                              |
-| [__________________________________________]   |
-|                                                |
-| Story / Background                             |
-| [__________________________________________]   |
-| [__________________________________________]   |
-|                                                |
-| Tools / Cultural Information                   |
-| [__________________________________________]   |
-| [__________________________________________]   |
-|                                                |
-| Tags                                           |
-| [____________________] [ + Add Tag ]           |
-|                                                |
-| Colors                                         |
-| [____________________] [ + Add Color ]         |
-|                                                |
-| Pattern                                        |
-| [__________________________________________]   |
-|                                                |
-| Distinguished Features                         |
-| [__________________________________________]   |
-|                                                |
-| Measurements                                   |
-| [Name] [Value] [Unit] [ + Add Measurement ]    |
-|                                                |
-| Example:                                       |
-| [Width] [120] [cm]                             |
-|                                                |
-| Images                                         |
-| [ Upload Image ]                               |
-|                                                |
-|                 [ Create Craft ]               |
-|                                                |
-+------------------------------------------------+
+Validation Example:
+Kete (bag), Riria Smith, Ahipara, New Zealand
+
++------------------------------------------------------------+
+|                       CREATE CRAFT                         |
++------------------------------------------------------------+
+|                                                            |
+| Craft Name *                                               |
+| [ Kete (bag)___________________________________________ ]  |
+|                                                            |
+| Craft Type *                                               |
+| [ Kete / Woven Bag ▼ ]                                     |
+| [ Other / Add New Craft Type ]                             |
+|                                                            |
+| Culture / Community *                                      |
+| [ Māori ▼ ]                                                |
+| [ Other / Add New Community ]                              |                                                          
+|                                                            |
+| Location *                                                 |
+| [ Ahipara, New Zealand_________________________________ ]  |
+|                                                            |
+| Description                                                |
+| [ Woven kete with a flat base and flap.________________ ] |
+| [______________________________________________________ ] |
+|                                                            |
+| MATERIALS                                                  |
+|                                                            |
+| [ Harakeke × ] [ Muka × ] [ Wood × ] [ Cotton × ]         |
+|                                                            |
+| [ + Add Material ▼ ]                                       |
+| [ View material information ]                              |
+| [ Other / Add New Material ]                               |
+|                                                            |
+| TECHNIQUES / PRODUCTION METHODS                            |
+|                                                            |
+| [ Raranga × ] [ Braiding × ] [ Sewing × ]                  |
+|                                                            |
+| [ + Add Technique ▼ ]                                      |
+| [ View technique information ]                             |
+| [ Other / Add New Technique ]                              |
+|                                                            |
+| TOOLS                                                      |
+|                                                            |
+| [ Select Tool ▼ ] [ + Add Tool ]                           |
+| [ View tool information ]                                  |
+| [ Other / Add New Tool ]                                   |
+|                                                            |
+| Story / Background                                         |
+| [______________________________________________________ ] |
+| [______________________________________________________ ] |
+|                                                            |
+| Cultural Information                                      |
+| [______________________________________________________ ] |
+| [______________________________________________________ ] |
+|                                                            |
+| TAGS                                                       |
+|                                                            |
+| [ Māori × ] [ weaving × ] [ kete × ] [ + Add Tag ]        |
+|                                                            |
+| COLORS                                                     |
+|                                                            |
+| Color Family                                               |
+| [ Green ▼ ]                                                |
+|                                                            |
+| Shade                                                      |
+| [ Not specified ▼ ]                                        |
+|                                                            |
+| [ + Add Color ] [ Other / Add Custom Shade ]               |
+|                                                            |
+| PATTERN                                                    |
+|                                                            |
+| [ Takitahi ▼ ]                                             |
+| [ View pattern information ]                               |
+| [ Other / Add New Pattern ]                                |
+|                                                            |
+| Distinguished Features                                    |
+| [ Flat base____________________________________________ ] |
+| [ Flap with wooden button______________________________ ] |
+| [ Braided muka handle__________________________________ ] |
+| [ Green cotton lining__________________________________ ] |
+|                                                            |
+| MEASUREMENTS                                               |
+|                                                            |
+| [ Width  ] [ 260    ] [ mm ▼ ]                             |
+| [ Height ] [ 185    ] [ mm ▼ ]                             |
+| [ Weight ] [ 159.07 ] [ g  ▼ ]                             |
+|                                                            |
+| [ + Add Measurement ]                                      |
+|                                                            |
+| IMAGES                                                     |
+|                                                            |
+| [ Upload Image ] [ + Add Another Image ]                   |
+|                                                            |
+|                       [ Create Craft ]                     |
+|                                                            |
++------------------------------------------------------------+
 
 * Required field
-```
 
+Design Notes
+
+Craft Type uses controlled options but allows user-contributed types through Other / Add New.
+
+Culture / Community is explicitly recorded because cultural association is important for an indigenous craft application.
+
+Materials are multiple-select rather than a single value.
+
+Techniques are multiple-select because one craft may use several techniques.
+
+Materials, techniques, tools, and patterns have explanatory information available to the user.
+
+Unknown terms can be contributed using an Other / Add New option.
+
+Colors support a color family and a more specific shade.
+
+Measurements are dynamic and support different measurement names and units.
+
+Description, Story / Background, Cultural Information, and Distinguished Features remain flexible text fields.
+
+Images support multiple uploads.
 ---
 
 ## WF-03 – Browse and Search Crafts
@@ -165,53 +224,103 @@ Related User Stories:
 Related Use Case:
 - UC-06 – View Craft Details
 
-```text
-+------------------------------------------------+
-|                  CRAFT DETAIL                  |
-+------------------------------------------------+
-|                                                |
-| Craft Name                                     |
-|                                                |
-| [                Main Image                ]   |
-|                                                |
-| Craft Type:                                    |
-| Location:                                      |
-| Material:                                      |
-| Tags:                                          |
-| Colors:                                        |
-| Pattern:                                       |
-|                                                |
-| Description                                    |
-| [__________________________________________]   |
-|                                                |
-| Production Method                              |
-| [__________________________________________]   |
-|                                                |
-| Story / Background                             |
-| [__________________________________________]   |
-|                                                |
-| Tools / Cultural Information                   |
-| [__________________________________________]   |
-|                                                |
-| Distinguished Features                         |
-| [__________________________________________]   |
-|                                                |
-| Measurements                                   |
-| Width: 120 cm                                  |
-| Length: 200 cm                                 |
-|                                                |
-| Contributed by: User                           |
-|                                                |
-| [ Follow Craft ]                               |
-|                                                |
-+------------------------------------------------+
-|                 SIMILAR CRAFTS                 |
-|                                                |
-| [Craft Card]  [Craft Card]  [Craft Card]       |
-|                                                |
-+------------------------------------------------+
-```
-
++------------------------------------------------------------+
+|                       CRAFT DETAIL                         |
++------------------------------------------------------------+
+|                                                            |
+| Kete (bag)                                                 |
+|                                                            |
+| [                      Main Image                      ]   |
+|                                                            |
+| [ Image 2 ] [ Image 3 ]                                    |
+|                                                            |
+| Craft Type                                                 |
+| Kete / Woven Bag                                           |
+|                                                            |
+| Culture / Community                                        |
+| Māori                                                      |
+|                                                            |                                             
+|                                                            |
+| Location                                                   |
+| Ahipara, New Zealand                                       |
+|                                                            |
++------------------------------------------------------------+
+| MATERIALS                                                  |
+|                                                            |
+| Harakeke     [ What is this? ]                             |
+| Muka         [ What is this? ]                             |
+| Wood         [ What is this? ]                             |
+| Cotton       [ What is this? ]                             |
+|                                                            |
++------------------------------------------------------------+
+| TECHNIQUES                                                 |
+|                                                            |
+| Raranga      [ What is this? ]                             |
+| Braiding     [ What is this? ]                             |
+| Sewing       [ What is this? ]                             |
+|                                                            |
++------------------------------------------------------------+
+| TOOLS                                                      |
+|                                                            |
+| Not specified                                              |
+|                                                            |
++------------------------------------------------------------+
+| TAGS                                                       |
+|                                                            |
+| [ Māori ] [ weaving ] [ kete ]                             |
+|                                                            |
++------------------------------------------------------------+
+| COLORS                                                     |
+|                                                            |
+| Green                                                      |
+| Shade: Not specified                                       |
+|                                                            |
++------------------------------------------------------------+
+| PATTERN                                                    |
+|                                                            |
+| Takitahi          [ What is this? ]                        |
+|                                                            |
++------------------------------------------------------------+
+| DESCRIPTION                                                |
+|                                                            |
+| Woven kete with a flat base and flap.                      |
+|                                                            |
++------------------------------------------------------------+
+| STORY / BACKGROUND                                         |
+|                                                            |
+| No additional story provided.                              |
+|                                                            |
++------------------------------------------------------------+
+| CULTURAL INFORMATION                                       |
+|                                                            |
+| No additional cultural information provided.               |
+|                                                            |
++------------------------------------------------------------+
+| DISTINGUISHED FEATURES                                     |
+|                                                            |
+| • Flat base                                                |
+| • Flap closure                                             |
+| • Wooden button                                            |
+| • Braided muka handle with decorative tassels              |
+| • Green cotton lining                                      |
+|                                                            |
++------------------------------------------------------------+
+| MEASUREMENTS                                               |
+|                                                            |
+| Width:   260 mm                                            |
+| Height:  185 mm                                            |
+| Weight:  159.07 g                                          |
+|                                                            |
++------------------------------------------------------------+
+| Contributed by: User                                       |
+|                                                            |
+| [ Follow Craft ]                                           |
+|                                                            |
++------------------------------------------------------------+
+|                      SIMILAR CRAFTS                        |
+|                                                            |
+| [ Craft Card ]   [ Craft Card ]   [ Craft Card ]           |
+|                                                            |
 ---
 
 ## WF-05 – Edit Craft
