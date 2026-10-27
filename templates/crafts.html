@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crafts</title>
+</head>
+<body>
+
+    <h1>Crafts</h1>
+    <form method="GET" action="/crafts">
+    <input
+        type="text"
+        name="q"
+        placeholder="Search crafts..."
+    >
+    <button type="submit">Search</button>
+</form>
+
+<br>
+
+    <p>Total crafts: {{ crafts|length }}</p>
+
+   {% if crafts %}
+
+    {% for craft in crafts %}
+        <div>
+            <h2>{{ craft.name }}</h2>
+            <p>Type: {{ craft.craft_type }}</p>
+            <p>Location: {{ craft.location }}</p>
+            <p>Material: {{ craft.material }}</p>
+
+            <a href="/craft_detail/{{ craft.id }}">View Details</a>
+            <hr>
+        </div>
+    {% endfor %}
+
+{% else %}
+
+    <p>No crafts found.</p>
+
+{% endif %}
+
+</body>
+</html>

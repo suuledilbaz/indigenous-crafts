@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Craft Detail - Indigenous Crafts</title>
+</head>
+
+<body>
+
+    <h1>{{ craft.name }}</h1>
+
+    <p>
+        <strong>Craft Type:</strong>
+        {{ craft.craft_type }}
+    </p>
+
+    <p>
+        <strong>Location:</strong>
+        {{ craft.location }}
+    </p>
+
+    <p>
+        <strong>Material:</strong>
+        {{ craft.material }}
+    </p>
+
+    <p>
+        <strong>Pattern:</strong>
+        {{ craft.pattern }}
+    </p>
+
+    <h3>Description</h3>
+    <p>{{ craft.description }}</p>
+
+    <h3>Production Method</h3>
+    <p>{{ craft.production_method }}</p>
+
+    <h3>Story / Background</h3>
+    <p>{{ craft.story }}</p>
+
+    <h3>Cultural Information</h3>
+    <p>{{ craft.cultural_information }}</p>
+
+    <a href="/crafts">Back to Crafts</a>
+
+</body>
+</html>
